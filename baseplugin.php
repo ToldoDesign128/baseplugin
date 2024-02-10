@@ -29,10 +29,11 @@ function bsp_plugin_style_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'bsp_plugin_style_scripts' );
 
+// Banner
 function bsp_banner() {
 	echo 	'<div class="banner">
 				<p>Aperti dal Lunedì al Venerdì dalle 9.00 - 13.00 e dalle 15.00 - 19.00</p> <a href="tel:064403860" target="_blank">064403860</a>
 			</div>';
 }
 
-add_action( 'wp_body_open', 'bsp_banner' );
+add_action( 'get_header', 'bsp_banner' );

@@ -6,6 +6,8 @@ ol,ul{list-style-type: none;}
 img{height: auto;}
 
 /* Plugin Style */
+
+/* Banner */
 .banner{
     display: flex;
     justify-content: flex-end;
