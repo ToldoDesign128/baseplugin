@@ -2,8 +2,8 @@
 
 /*
  * Plugin Name:       Base Plugin
- * Plugin URI:        https://example.com/plugins/the-basics/
- * Description:       Una base per creare nuovi Plugin 
+ * Plugin URI:         https://federicotoldo.com/
+ * Description:       Funzionalità personalizate
  * Version:           1.0.0
  * Requires at least: 6.2
  * Requires PHP:      7.2
