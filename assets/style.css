@@ -16,12 +16,14 @@ img{height: auto;}
     background-color: cadetblue;    
 }
 .banner p{
+    margin: 0;
     color: white;
     opacity: .8;
 }
 .banner a{
+    margin: 0;
     padding-left: 30px;
-    color: white;
+    color: white !important;
     opacity: .8;
     transition: all 1s cubic-bezier(.215, .61, .355, 1);
 }
