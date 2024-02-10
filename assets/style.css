@@ -1,0 +1,28 @@
+.banner{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 30px;
+    background-color: cadetblue;    
+}
+.banner p{
+    color: white;
+    opacity: .8;
+}
+.banner a{
+    color: white;
+    opacity: .8;
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+.banner a:hover{
+    opacity: 1;
+}
+
+@media (max-width: 967px) {
+    .banner{
+        display: none;
+    }    
+}

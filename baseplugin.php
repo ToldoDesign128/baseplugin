@@ -24,7 +24,15 @@ if (!defined('ABSPATH')) {
  * Proper way to enqueue scripts and styles
  */
 function bsp_plugin_style_scripts() {
-	wp_enqueue_style( 'bsp-style', plugins_url('style.css', __FILE__));
-	wp_enqueue_script( 'bsp-scripts', plugins_url('scripts.js', __FILE__), array(), '1.0.0', true );
+	wp_enqueue_style( 'bsp-style', plugins_url('assets/style.css', __FILE__));
+	wp_enqueue_script( 'bsp-scripts', plugins_url('assets/scripts.js', __FILE__), array(), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'bsp_plugin_style_scripts' );
+
+function bsp_banner() {
+	echo 	'<div class="banner">
+				<p>Aperti dal Lunedì al Venerdì dalle 9.00 - 13.00 e dalle 15.00 - 19.00</p> <a href="tel:064403860" target="_blank">064403860</a>
+			</div>';
+}
+
+add_action( 'wp_body_open', 'bsp_banner' );
