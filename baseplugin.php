@@ -36,4 +36,4 @@ function bsp_banner() {
 			</div>';
 }
 
-add_action( 'get_header', 'bsp_banner' );
+add_action( 'wp_body_open', 'bsp_banner' );
